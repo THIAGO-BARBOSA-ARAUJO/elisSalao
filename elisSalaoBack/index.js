@@ -11,7 +11,7 @@ app.use(express.json())
 
 app.use(router)
 
-mongoose.connect("mongodb://192.168.1.23:27017/elissalao")
+mongoose.connect("mongodb://localhost:27017/elissalao")
 .then(() => console.log('banco de dados conectado!'))
 .catch((error) => console.log("erro ao conectar banco d dados", error))
 
